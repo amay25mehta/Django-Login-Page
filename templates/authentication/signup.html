@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <h3>Student Sign Up</h3>
+        <form action="/signup" method="post">
+        {% csrf_token %}
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Create A Username (use only letters and numbers)" Required>
+            <br>
+
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your First Name" Required>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Your Last Name" >
+            <br>
+
+            <label for="standard">Standard</label>
+            <input type="text" class="form-control" id="standard" name="standard" placeholder="Enter Your Standard" >
+            <br>
+        
+
+            <label for="section">Section</label>
+            <input type="text" class="form-control" id="section" name="section" placeholder="Enter Your Section" >
+            <br>
+
+            <label for="stream">Stream</label>
+            <input type="text" class="form-control" id="stream" name="stream" placeholder="Enter Your Stream" >
+            <br>
+
+            <label for="rollnumber">RollNumber</label>
+            <input type="text" class="form-control" id="rollnumber" name="rollnumber" placeholder="Enter Your RollNumber" >
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email Address" Required>
+            <br>
+
+            <label for="pass1">Password</label>
+            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Create Your Password" Required>
+            <br>
+
+
+            
+
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+
+
+
+
+        </form>
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>
